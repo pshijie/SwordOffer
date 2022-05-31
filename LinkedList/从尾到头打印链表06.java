@@ -5,13 +5,13 @@ import java.util.List;
 /**
  * @author psj
  * @date 2022/5/31 9:53
- * @File: reversePrint.java
+ * @File: 从尾到头打印链表06.java
  * @Software: IntelliJ IDEA
  */
 // https://leetcode.cn/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/
 // 输入一个链表的头节点，从尾到头反过来返回每个节点的值(用数组返回)
 
-public class reversePrint {
+public class 从尾到头打印链表06 {
     class ListNode {
         int val;
         ListNode next;
