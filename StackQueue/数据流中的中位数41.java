@@ -23,12 +23,12 @@ public class 数据流中的中位数41 {
     public void addNum(int num) {
         // 当两个堆的个数不一样时(肯定是A堆要多)
         if (A.size() != B.size()) {
-            // 先将num添加到大根堆B，然后将B的堆顶给A(保证B中最大的数要小于A中最小的数)
+            // 先将num添加到大根堆A，然后将A的堆顶给B(保证B中最大的数要小于A中最小的数)
             A.add(num);
             B.add(A.poll());
         // 当两个堆的个数一样时
         } else {
-            // 先将num添加到小根堆A，然后将A的堆顶给B(保证A中最小的数要大于B中最大的数)
+            // 先将num添加到小根堆B，然后将B的堆顶给A(保证A中最小的数要大于B中最大的数)
             // 因为要保证A的数目大于B的数目
             B.add(num);
             A.add(B.poll());
