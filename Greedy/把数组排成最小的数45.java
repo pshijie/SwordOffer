@@ -22,7 +22,7 @@ public class 把数组排成最小的数45 {
         return res.toString();
     }
 
-    // 方法2:快排
+    // 方法2:快速排序
     public String minNumber(int[] nums) {
         String[] temp = new String[nums.length];
         for (int i = 0; i < nums.length; i++)
